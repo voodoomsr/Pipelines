@@ -3,7 +3,7 @@ pipelines:
     group: EjercicioTDD
     materials:
       repo:
-        git: git@github.com:rdparedes/ejercicio-tdd-python
+        git: https://github.com/rdparedes/ejercicio-tdd-python
         branch: master
     stages:
       - pruebas:
