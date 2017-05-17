@@ -9,8 +9,8 @@ pipelines:
       - pruebas:
           jobs:
             pruebas_unitarias:
+              resources:
+                - pythonagent
               tasks:
                   - exec:
-                      command: echo
-                      arguments:
-                        - holi
+                      command: nosetests
