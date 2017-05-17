@@ -9,13 +9,11 @@ pipelines:
       - pruebas:
           jobs:
             pruebas_unitarias:
-              resources:
-                - rpibase
-            tasks:
-                - exec:
-                  command: ./gradlew
-                  arguments:
-                    - deleteEncryptedPropertiesFile
-                    - :app:clean
-                    - :app:test
-                    - --stacktrace
+              tasks:
+                  - exec:
+                      command: ./gradlew
+                      arguments:
+                        - deleteEncryptedPropertiesFile
+                        - :app:clean
+                        - :app:test
+                        - --stacktrace
