@@ -13,6 +13,4 @@ pipelines:
                 - rpibase
             tasks:
                 - exec:
-                    command: echo
-                    arguments:
-                      - holi
+                    command: env
