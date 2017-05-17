@@ -13,4 +13,9 @@ pipelines:
                 - rpibase
             tasks:
                 - exec:
-                    command: env
+                  command: ./gradlew
+                  arguments:
+                    - deleteEncryptedPropertiesFile
+                    - :app:clean
+                    - :app:test
+                    - --stacktrace
