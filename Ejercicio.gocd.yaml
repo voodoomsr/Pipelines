@@ -1,6 +1,6 @@
 pipelines:
-  api-eventos:
-    group: EjercicioTDD
+  EjercicioTDD:
+    group: Ejercicios
     materials:
       repo:
         git: https://github.com/rdparedes/ejercicio-tdd-python
