@@ -11,9 +11,6 @@ pipelines:
             pruebas_unitarias:
               tasks:
                   - exec:
-                      command: ./gradlew
+                      command: echo
                       arguments:
-                        - deleteEncryptedPropertiesFile
-                        - :app:clean
-                        - :app:test
-                        - --stacktrace
+                        - holi
