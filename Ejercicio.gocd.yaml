@@ -1,0 +1,14 @@
+pipelines:
+  api-eventos:
+    group: EjercicioTDD
+    materials:
+      repo:
+        git: git@github.com:rdparedes/ejercicio-tdd-python
+        branch: master
+    stages:
+      - pruebas:
+          jobs:
+            pruebas_unitarias:
+              resources:
+                - rpibase
+            
