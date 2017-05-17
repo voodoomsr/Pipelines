@@ -11,4 +11,8 @@ pipelines:
             pruebas_unitarias:
               resources:
                 - rpibase
-            
+            tasks:
+                - exec:
+                    command: echo
+                    arguments:
+                      - holi
