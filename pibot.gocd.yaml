@@ -14,5 +14,4 @@ pipelines:
               tasks:
                   - exec:
                       command: cd DirectionControl
-                  - exec:
-                      command: nosetests
+                  
