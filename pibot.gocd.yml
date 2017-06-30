@@ -1,0 +1,19 @@
+pipelines:
+  piBot:
+    group: robots
+    materials:
+      repo:
+        git: https://github.com/slincastro/piBot.git
+        branch: master
+    stages:
+      - pruebas:
+          jobs:
+            pruebas_unitarias:
+              resources:
+                - pythonagent
+              tasks:
+                  - exec:
+                      command: cd DirectionControl
+              tasks:
+                  - exec:
+                      command: nosetests
