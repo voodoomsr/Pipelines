@@ -1,6 +1,6 @@
 pipelines:
-  piBot:
-    group: robots
+  PiBot:
+    group: Robots
     materials:
       repo:
         git: https://github.com/slincastro/piBot.git
