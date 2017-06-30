@@ -13,7 +13,4 @@ pipelines:
                 - pythonagent
               tasks:
                   - exec:
-                      command: cd DirectionControl
-              tasks:
-                  - exec:
                       command: nosetests
