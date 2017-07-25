@@ -1,9 +1,9 @@
 pipelines:
-  PiBot:
+  piArm:
     group: robots
     materials:
       repo:
-        git: https://github.com/slincastro/piBot.git
+        git: https://github.com/slincastro/piArm.git
         branch: master
     stages:
       - pruebas:
