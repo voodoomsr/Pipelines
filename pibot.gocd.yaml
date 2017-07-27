@@ -14,3 +14,4 @@ pipelines:
               tasks:
                   - exec:
                       command: nosetests
+    
