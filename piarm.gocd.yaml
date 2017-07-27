@@ -21,4 +21,9 @@ pipelines:
                 - pythonagent
               tasks:
                 - exec:
-                    command: nosetests --cover-package=src --with-coverage --cover-min-percentage=90 --cover-html
+                    command: nosetests
+                    arguments:
+                      - --cover-package=src
+                      - --with-coverage
+                      - --cover-min-percentage=90
+                      - --cover-html
