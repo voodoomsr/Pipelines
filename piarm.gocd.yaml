@@ -19,6 +19,10 @@ pipelines:
             cobertura:
               resources:
                 - pythonagent
+              artifacts:
+                - coberturaxxx:
+                    source: .
+                    destination: cover/
               tasks:
                 - exec:
                     command: nosetests
@@ -27,7 +31,3 @@ pipelines:
                       - --with-coverage
                       - --cover-min-percentage=95
                       - --cover-html
-              artifacts:
-                - cobertura:
-                    source: .
-                    destination: cover/
