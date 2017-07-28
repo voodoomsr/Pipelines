@@ -27,3 +27,7 @@ pipelines:
                       - --with-coverage
                       - --cover-min-percentage=95
                       - --cover-html
+              artifacts:
+                - test:
+                    source: .
+                    destination: cover/
