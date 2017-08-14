@@ -20,9 +20,11 @@ pipelines:
               resources:
                 - pythonagent
               artifacts:
-                - coberturaxxx:
+                - cobertura:
                     source: .
                     destination: cover/
+              tabs:
+                report: test-reports/
               tasks:
                 - exec:
                     command: nosetests
