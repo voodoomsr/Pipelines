@@ -20,7 +20,7 @@ pipelines:
               resources:
                 - pythonagent
               artifacts:
-                - cobertura:
+                - build:
                     source: .
                     destination: cover/
               tabs:
