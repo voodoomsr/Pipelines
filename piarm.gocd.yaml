@@ -31,5 +31,5 @@ pipelines:
                     arguments:
                       - --cover-package=src
                       - --with-coverage
-                      - --cover-min-percentage=95
+                      - --cover-min-percentage=90
                       - --cover-html
