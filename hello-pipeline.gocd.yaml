@@ -1,11 +1,13 @@
-hello-pipeline:
-  materials:
-    anyrepo:
-      git: https://github.com/voodoomsr/myfirstpipeline
-  stages:
-    - stage1:
-        jobs:
-          jobs1:
-            tasks:
-              - exec:
-                command: ./build
+pipelines:
+  firstpipeline:
+    group: firstGroup
+    materials:
+      anyrepo:
+        git: https://github.com/voodoomsr/myfirstpipeline
+    stages:
+      - stage1:
+          jobs:
+            jobs1:
+              tasks:
+                - exec:
+                  command: ./build
