@@ -10,4 +10,4 @@ pipelines:
             jobs1:
               tasks:
                 - exec:
-                  command: ./build
+                    command: ./build
