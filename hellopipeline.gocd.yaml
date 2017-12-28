@@ -11,3 +11,15 @@ pipelines:
               tasks:
                 - exec:
                     command: ./build
+                - exec:
+                    command: docker
+                    arguments:
+                      - build
+                      - -t
+                      - my-php-app
+                      - .
+                - exec:
+                    command: docker
+                    arguments:
+                      - run
+                      - my-php-app
